@@ -6,3 +6,6 @@ config/ranger.env
 config/peatio.env
 config/keys/*
 !config/keys/.gitkeep
+.DS_Store
+*/**/.DS_Store
+
