@@ -13,6 +13,8 @@
   name:              Grin Floonet
   client:            grin
   server:            http://10.8.0.1:25003
+  secret:            'c7CoEsA6gqFSMCa8u5Hc'
+  username:          'grin'
   height:            8500
   min_confirmations: 10
   explorer:

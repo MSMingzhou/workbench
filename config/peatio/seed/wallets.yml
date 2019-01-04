@@ -88,3 +88,19 @@
   settings:
     uri:            http://10.8.0.1:8545
     secret:         'top_secret'
+
+- name:             GRIN Deposit Wallet
+  blockchain_key:   grin-floonet
+  currency_id:      grin
+  address:          ''
+  kind:             deposit
+  nsig:             1
+  max_balance:      20.0
+  status:           active
+  gateway:          grin
+  settings:
+    uri:            http://10.8.0.1:25004
+    secret:         'c7CoEsA6gqFSMCa8u5Hc'
+    username:       'grin'
+
+# left out GRIN HOT Wallet
