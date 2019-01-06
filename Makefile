@@ -42,6 +42,7 @@ daemons:
 	                         deposit_collection       \
 	                         deposit_collection_fees  \
 	                         deposit_coin_address     \
+	                         deposit_mwupload         \
 	                         slave_book market_ticker \
 	                         pusher_market            \
 	                         pusher_member            \

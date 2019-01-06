@@ -21,7 +21,12 @@ services:
       - ../config/peatio/seed:/opt/peatio/config/seed
       - ../config/peatio/management_api_v1.yml:/opt/peatio/config/management_api_v1.yml
       - ../config/peatio/plugins.yml:/opt/peatio/config/plugins.yml
-      - ../app/peatio/app:/home/app/app
+      - type: bind
+        source: ../app/peatio/app
+        target: /home/app/app
+      - type: bind
+        source: ../app/peatio/public
+        target: /home/app/public
       - ../app/peatio/lib:/home/app/lib
     labels:
       traefik.enable: true

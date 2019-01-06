@@ -112,3 +112,19 @@
   gateway:          bitcoind
   settings:
     uri:            http://admin:changeme@10.8.0.1:18332
+
+- name:             GRIN Deposit Wallet
+  blockchain_key:   grin-floonet
+  currency_id:      grin
+  address:          ''
+  kind:             deposit
+  nsig:             1
+  max_balance:      20.0
+  status:           active
+  gateway:          grin
+  settings:
+    uri:            http://10.8.0.1:25004
+    secret:         'c7CoEsA6gqFSMCa8u5Hc'
+    user:           'grin'
+
+# left out GRIN HOT Wallet
