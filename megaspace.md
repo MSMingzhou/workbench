@@ -70,18 +70,18 @@ These are just slightly modified from the original usage in [README.md](README.m
 1. You should add those hosts to your `/etc/hosts` file:
 
    ```
-   0.0.0.0 api.wb.local
-   0.0.0.0 auth.wb.local
-   
-   0.0.0.0 ws.ranger.wb.local
-   
-   0.0.0.0 pma.wb.local
-   0.0.0.0 monitor.wb.local
-   
-   0.0.0.0 btc.wb.local
-   0.0.0.0 eth.wb.local
-   
-   0.0.0.0 mail.wb.local
+   0.0.0.0 galleon.exchange
+   0.0.0.0 auth.galleon.exchange
+
+   0.0.0.0 ws.ranger.galleon.exchange
+
+   0.0.0.0 pma.galleon.exchange
+   0.0.0.0 monitor.galleon.exchange
+
+   0.0.0.0 btc.galleon.exchange
+   0.0.0.0 eth.galleon.exchange
+
+   0.0.0.0 mail.galleon.exchange
    ```
 
 Now you have peatio up and running.
@@ -97,10 +97,10 @@ docker-compose down -v
 ```
 
 ### Access web UI
-- [Admin Panel](http://api.wb.local/admin)
-- [Profile](http://api.wb.local/settings)
+- [Admin Panel](http://galleon.exchange/admin)
+- [Profile](http://auth.galleon.exchange/)
 
-You will be redirected to [Barong](http://auth.wb.local/) for authentication. Here's the admin credential:
+You will be redirected to [Barong](http://auth.galleon.exchange/) for authentication. Here's the admin credential:
 - Email: `admin@barong.io`
 - Password: `Chah5YohWm`
 
