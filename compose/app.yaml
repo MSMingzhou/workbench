@@ -30,7 +30,7 @@ services:
       - ../app/peatio/lib:/home/app/lib
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: api.wb.local'
+      traefik.frontend.rule: 'Host: galleon.exchange'
       traefik.port: 8000
     command: bash -c "bin/link_config && bundle exec puma --config config/puma.rb"
 
@@ -51,7 +51,7 @@ services:
       - "8001"
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: auth.wb.local'
+      traefik.frontend.rule: 'Host: auth.galleon.exchange'
       traefik.port: 8001
 
   trading_ui:
@@ -66,5 +66,5 @@ services:
       - "8002"
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: api.wb.local; PathPrefix:/trading, /trading-ui-assets'
+      traefik.frontend.rule: 'Host: galleon.exchange; PathPrefix:/trading, /trading-ui-assets'
       traefik.port: 8002

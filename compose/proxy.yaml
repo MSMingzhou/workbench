@@ -13,13 +13,13 @@ services:
     networks:
       default:
         aliases:
-          - api.wb.local
-          - auth.wb.local
-          - ws.ranger.wb.local
-          - pma.wb.local
-          - eth.wb.local
-          - monitor.wb.local
+          - galleon.exchange
+          - auth.galleon.exchange
+          - ws.ranger.galleon.exchange
+          - pma.galleon.exchange
+          - eth.galleon.exchange
+          - monitor.galleon.exchange
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: monitor.wb.local'
+      traefik.frontend.rule: 'Host: monitor.galleon.exchange'
       traefik.port: 8080

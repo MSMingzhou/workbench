@@ -33,7 +33,7 @@ services:
       PHP_MAX_INPUT_VARS: 1G
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: pma.wb.local'
+      traefik.frontend.rule: 'Host: pma.galleon.exchange'
       traefik.port: 80
 
   rabbitmq:
@@ -43,7 +43,7 @@ services:
       - rabbitmq_data:/var/lib/rabbitmq
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: rabbitmq.wb.local'
+      traefik.frontend.rule: 'Host: rabbitmq.galleon.exchange'
       traefik.port: 15672
 
   vault:
@@ -64,7 +64,7 @@ services:
       - ../config/ranger.env
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: ws.ranger.wb.local'
+      traefik.frontend.rule: 'Host: ws.ranger.galleon.exchange'
       traefik.port: 8080
     command: bash -c "bundle exec peatio service start ranger"
 
@@ -72,7 +72,7 @@ services:
     image: schickling/mailcatcher
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: mail.wb.local'
+      traefik.frontend.rule: 'Host: mail.galleon.exchange'
       traefik.port: 1080
 
 volumes:
